@@ -1,0 +1,13 @@
+(defun f ()
+	(lambda () 
+		(defvar *counter* 0)
+		(setf *counter* (+ *counter* 1))
+		*counter*
+	)
+)
+'(f)
+(f)
+'(f)
+(f)
+'(f)
+(f)
